@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, MapPin, Phone, Youtube, Globe } from 'lucide-react';
+// Update the import line at the top
+import { Github, Linkedin, Mail, MapPin, Phone, Youtube, Globe, FileText } from 'lucide-react';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -92,11 +94,10 @@ I am excited about the opportunities ahead and look forward to contributing my s
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
-                    activeSection === section
-                      ? 'border-[#CFFFDC] text-white'
-                      : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
-                  }`}
+                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${activeSection === section
+                    ? 'border-[#CFFFDC] text-white'
+                    : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
+                    }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -152,6 +153,17 @@ I am excited about the opportunities ahead and look forward to contributing my s
                 <p className="mt-4 text-[#2E6F40]">
                   Machine Learning Engineer with 2+ years of hands-on experience in developing AI solutions, published researcher in computer vision, and winner of multiple hackathons. Specialized in deep learning applications with expertise in TensorFlow, computer vision, and full-stack development.
                 </p>
+              </div>
+              <div className="flex items-center space-x-3">
+                <FileText className="h-5 w-5 text-[#68BA7F]" />
+                <a
+                  href="pdf/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#253D2C] hover:underline"
+                >
+                  View My Resume
+                </a>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm border border-[#68BA7F]">
