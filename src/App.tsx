@@ -118,7 +118,7 @@ I am excited about the opportunities ahead and look forward to contributing my s
                 <div className="text-center">
                   <img
                     className="h-32 w-32 rounded-full mx-auto ring-4 ring-[#68BA7F]"
-                    src="img/potr.jpg"
+                    src="/img/potr.jpg"
                     alt="Profile"
                   />
                   <h2 className="mt-4 text-xl font-bold text-[#253D2C]">Himanshu Singh Aswal</h2>
@@ -157,7 +157,7 @@ I am excited about the opportunities ahead and look forward to contributing my s
               <div className="flex items-center space-x-3">
                 <FileText className="h-5 w-5 text-[#68BA7F]" />
                 <a
-                  href="pdf/resume.pdf"
+                  href="/pdf/resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-[#253D2C] hover:underline"
