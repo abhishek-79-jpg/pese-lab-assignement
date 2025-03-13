@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, MapPin, Phone, Youtube } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin, Phone, Youtube, Globe } from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -29,32 +29,55 @@ function App() {
     {
       week: "Week 1",
       summary: "Self introduction",
-      link: "https://youtube.com/shorts/d-eHyNb5luk?feature=share"
+      details: [
+        `Hello everyone, my name is Himanshu Singh Aswal. I am currently in my prefinal year, pursuing a BTech in Computer Science and Engineering at Graphic Era Hill University, and I completed my schooling at DPSG, Dehradun. I have always been passionate about technology, and my ultimate aim is to build a career in software development.
+
+My academic journey has been quite enriching. I had the opportunity to work on a research paper titled "Neuroscience of Virtual Reality," which was recognized by IEEE. This project not only deepened my understanding of how technology and human cognition intersect but also fueled my passion for innovation.
+
+I have been actively involved in several projects, including:
+
+- **Deepfake Detection Using CNN:** A project aimed at developing robust systems to detect manipulated media.
+- **Job Tracking Application:** Designed to streamline and optimize job tracking processes.
+- **Music Transformer:** A creative endeavor that explores the fusion of music with advanced algorithms.
+
+Additionally, I have enhanced my technical skills by earning a certificate in Advanced Machine Learning from Coursera, taught by Andrew Ng. This training has equipped me with cutting-edge techniques that I am eager to apply in real-world scenarios.
+
+Outside of academics and technical pursuits, I am an avid football player. Playing football not only keeps me physically active but also teaches me the values of teamwork, strategy, and perseverance.
+
+I am excited about the opportunities ahead and look forward to contributing my skills and enthusiasm to the field of software development. Thank you for your time.`
+      ],
+      link: "https://youtube.com/shorts/d-eHyNb5luk?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Week 1.a",
       summary: "Adding little elements to your introduction",
-      link: "https://youtube.com/shorts/yxUbfe8mp1c?feature=share"
+      link: "https://youtube.com/shorts/yxUbfe8mp1c?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Week 2",
-      summary: "great story on self love",
-      link: "https://youtube.com/shorts/tocLpzi99ss?feature=share"
+      summary: "Great story on self love",
+      link: "https://youtube.com/shorts/tocLpzi99ss?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Week 3",
       summary: "How to write resume",
-      link: "https://youtube.com/shorts/KTGCLepDEXU?feature=share"
+      link: "https://youtube.com/shorts/KTGCLepDEXU?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Week 4",
-      summary: "Wome empowerment(1 vs 64)",
-      link: "https://youtube.com/shorts/F1uVSC58zFg?feature=share"
+      summary: "Women empowerment (1 vs 64)",
+      link: "https://youtube.com/shorts/F1uVSC58zFg?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
     },
     {
-      week: "Assignement",
+      week: "Assignment",
       summary: "Movie Review- Schindler's List",
-      link: "https://youtu.be/B9ZWUc4vAIA?si=fipVmf516njwLyu6"
+      link: "https://youtu.be/B9ZWUc4vAIA?si=fipVmf516njwLyu6",
+      siteLink: "https://www.notion.so/movie-review-1b56d660abad8072be5bfc15cf85717e?pvs=4"
     }
   ];
 
@@ -69,10 +92,11 @@ function App() {
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${activeSection === section
-                    ? 'border-[#CFFFDC] text-white'
-                    : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
-                    }`}
+                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                    activeSection === section
+                      ? 'border-[#CFFFDC] text-white'
+                      : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
+                  }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -249,6 +273,14 @@ function App() {
                 <div key={index} className="border-b border-[#CFFFDC] pb-6 last:border-0 last:pb-0">
                   <h4 className="font-medium text-[#253D2C]">{log.week}</h4>
                   <p className="mt-2 text-[#2E6F40]">{log.summary}</p>
+                  {log.details && (
+                    <div className="mt-2 text-sm text-[#2E6F40]">
+                      {Array.isArray(log.details)
+                        ? log.details.map((detail, i) => <p key={i}>{detail}</p>)
+                        : <p>{log.details}</p>}
+                    </div>
+                  )}
+                  {/* Watch Progress Video link */}
                   <a
                     href={log.link}
                     target="_blank"
@@ -258,6 +290,20 @@ function App() {
                     <Youtube className="h-4 w-4 mr-1" />
                     Watch Progress Video
                   </a>
+                  {/* Force the next link onto a new line */}
+                  <br />
+                  {/* Visit Site link */}
+                  {log.siteLink && (
+                    <a
+                      href={log.siteLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-2 inline-flex items-center text-sm text-[#2E6F40] hover:text-[#68BA7F]"
+                    >
+                      <Globe className="h-4 w-4 mr-1" />
+                      Visit Site
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
