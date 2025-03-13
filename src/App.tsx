@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 // Update the import line at the top
 import { Github, Linkedin, Mail, MapPin, Phone, Youtube, Globe, FileText } from 'lucide-react';
 
-
 function App() {
   const [activeSection, setActiveSection] = useState('about');
 
@@ -95,8 +94,8 @@ I am excited about the opportunities ahead and look forward to contributing my s
                   key={section}
                   onClick={() => setActiveSection(section)}
                   className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${activeSection === section
-                    ? 'border-[#CFFFDC] text-white'
-                    : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
+                      ? 'border-[#CFFFDC] text-white'
+                      : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
                     }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -302,7 +301,6 @@ I am excited about the opportunities ahead and look forward to contributing my s
                     <Youtube className="h-4 w-4 mr-1" />
                     Watch Progress Video
                   </a>
-                  {/* Force the next link onto a new line */}
                   <br />
                   {/* Visit Site link */}
                   {log.siteLink && (
@@ -316,6 +314,18 @@ I am excited about the opportunities ahead and look forward to contributing my s
                       Visit Site
                     </a>
                   )}
+                  {/* PDF link section added below each week */}
+                  <div className="flex items-center space-x-3 mt-2">
+                    <FileText className="h-5 w-5 text-[#68BA7F]" />
+                    <a
+                      href={log.pdf || `/pdf/${log.week.replace(/\s+/g, '').toLowerCase()}.pdf`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-[#253D2C] hover:underline"
+                    >
+                      {log.week} PDF
+                    </a>
+                  </div>
                 </div>
               ))}
             </div>
