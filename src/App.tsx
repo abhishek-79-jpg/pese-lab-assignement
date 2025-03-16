@@ -30,23 +30,6 @@ function App() {
     {
       week: "Week 1",
       summary: "Self introduction",
-      details: [
-        `Hello everyone, my name is Himanshu Singh Aswal. I am currently in my prefinal year, pursuing a BTech in Computer Science and Engineering at Graphic Era Hill University, and I completed my schooling at DPSG, Dehradun. I have always been passionate about technology, and my ultimate aim is to build a career in software development.
-
-My academic journey has been quite enriching. I had the opportunity to work on a research paper titled "Neuroscience of Virtual Reality," which was recognized by IEEE. This project not only deepened my understanding of how technology and human cognition intersect but also fueled my passion for innovation.
-
-I have been actively involved in several projects, including:
-
-- **Deepfake Detection Using CNN:** A project aimed at developing robust systems to detect manipulated media.
-- **Job Tracking Application:** Designed to streamline and optimize job tracking processes.
-- **Music Transformer:** A creative endeavor that explores the fusion of music with advanced algorithms.
-
-Additionally, I have enhanced my technical skills by earning a certificate in Advanced Machine Learning from Coursera, taught by Andrew Ng. This training has equipped me with cutting-edge techniques that I am eager to apply in real-world scenarios.
-
-Outside of academics and technical pursuits, I am an avid football player. Playing football not only keeps me physically active but also teaches me the values of teamwork, strategy, and perseverance.
-
-I am excited about the opportunities ahead and look forward to contributing my skills and enthusiasm to the field of software development. Thank you for your time.`
-      ],
       link: "https://youtube.com/shorts/d-eHyNb5luk?feature=share",
       siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
     },
