@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// Update the import line at the top
 import { Github, Linkedin, Mail, MapPin, Phone, Youtube, Globe, FileText } from 'lucide-react';
 
 function App() {
@@ -7,22 +6,22 @@ function App() {
 
   const projects = [
     {
-      title: "Deep Fake Detection System",
-      description: "Developed a ResNet-50 model achieving 92% accuracy on the FaceForensics++ dataset",
-      tech: ["Python", "TensorFlow", "OpenCV"],
-      stack: ["TensorFlow", "Keras", "NumPy", "Flask"]
+      title: "Weather App Dashboard",
+      description: "A responsive dashboard displaying real-time weather updates using multiple weather APIs.",
+      tech: ["React", "Node.js", "CSS"],
+      stack: ["React", "Express", "OpenWeatherMap API"]
     },
     {
-      title: "AI-Powered Sports Analytics Platform",
-      description: "Processed 500+ hours of game footage using YOLOv5 for player tracking, reducing manual analysis time by 70%",
-      tech: ["MERN Stack", "Python"],
-      stack: ["React.js", "Node.js", "MongoDB", "OpenCV"]
+      title: "E-commerce Platform",
+      description: "Developed a full-stack e-commerce website with a shopping cart and secure payment gateway.",
+      tech: ["MERN Stack", "Stripe API"],
+      stack: ["MongoDB", "Express", "React", "Node.js"]
     },
     {
-      title: "Medical Chatbot with NLP",
-      description: "Deployed a BERT-based diagnostic assistant handling 100+ daily queries with 85% accuracy",
-      tech: ["Python", "Transformers"],
-      stack: ["HuggingFace", "Flask", "Docker", "AWS EC2"]
+      title: "Personal Finance Manager",
+      description: "A mobile-first application to track expenses, set budgets, and monitor financial goals.",
+      tech: ["React Native", "Firebase"],
+      stack: ["React Native", "Firebase", "Redux"]
     }
   ];
 
@@ -30,38 +29,38 @@ function App() {
     {
       week: "Week 1",
       summary: "Self introduction",
-      link: "https://youtube.com/shorts/d-eHyNb5luk?feature=share",
-      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
+      link: "https://youtube.com/shorts/d-eHyNbluk?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deef472892a?pvs=4"
     },
     {
       week: "Week 1.a",
       summary: "Adding little elements to your introduction",
-      link: "https://youtube.com/shorts/yxUbfe8mp1c?feature=share",
-      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
+      link: "https://youtube.com/shorts/yxUbfep1c?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b9eeddf472892a?pvs=4"
     },
     {
       week: "Week 2",
       summary: "Great story on self love",
-      link: "https://youtube.com/shorts/tocLpzi99ss?feature=share",
-      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
+      link: "https://youtube.com/shorts/tocLpz9ss?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b9eeddf472892a?pvs=4"
     },
     {
       week: "Week 3",
       summary: "How to write resume",
-      link: "https://youtube.com/shorts/KTGCLepDEXU?feature=share",
-      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
+      link: "https://youtube.com/shorts/KTGCLDEXU?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b5660abad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Week 4",
       summary: "Women empowerment (1 vs 64)",
-      link: "https://youtube.com/shorts/F1uVSC58zFg?feature=share",
-      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deeddf472892a?pvs=4"
+      link: "https://youtube.com/shorts/F1uVS8zFg?feature=share",
+      siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660ad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Assignment",
       summary: "Movie Review- Schindler's List",
-      link: "https://youtu.be/B9ZWUc4vAIA?si=fipVmf516njwLyu6",
-      siteLink: "https://www.notion.so/movie-review-1b56d660abad8072be5bfc15cf85717e?pvs=4"
+      link: "https://youtu.be/B9ZWUcIA?si=fipVmf516njwLyu6",
+      siteLink: "https://www.notion.so/movie-review-1b56d660abad80e5bfc15cf85717e?pvs=4"
     }
   ];
 
@@ -76,10 +75,11 @@ function App() {
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${activeSection === section
+                  className={`inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium ${
+                    activeSection === section
                       ? 'border-[#CFFFDC] text-white'
                       : 'border-transparent text-[#CFFFDC] hover:border-[#68BA7F] hover:text-[#CFFFDC]'
-                    }`}
+                  }`}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
@@ -100,25 +100,25 @@ function App() {
                 <div className="text-center">
                   <img
                     className="h-32 w-32 rounded-full mx-auto ring-4 ring-[#68BA7F]"
-                    src="/img/potr.jpg"
+                    src="/img/pot.jpg"
                     alt="Profile"
                   />
-                  <h2 className="mt-4 text-xl font-bold text-[#253D2C]">Himanshu Singh Aswal</h2>
-                  <p className="text-sm text-[#2E6F40]">Machine Learning Engineer</p>
+                  <h2 className="mt-4 text-xl font-bold text-[#253D2C]">Abhishek Dobhal</h2>
+                  <p className="text-sm text-[#2E6F40]">Student & Developer</p>
                 </div>
 
                 <div className="mt-6 space-y-4">
                   <div className="flex items-center space-x-3">
                     <Phone className="h-5 w-5 text-[#68BA7F]" />
-                    <span className="text-sm text-[#253D2C]">+91-781-794-9407</span>
+                    <span className="text-sm text-[#253D2C]">+91-8979391198</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="h-5 w-5 text-[#68BA7F]" />
-                    <span className="text-sm text-[#253D2C]">aswalh0707@gmail.com</span>
+                    <span className="text-sm text-[#253D2C]">abhishek.dobhal@gmail.com</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Linkedin className="h-5 w-5 text-[#68BA7F]" />
-                    <span className="text-sm text-[#253D2C]">himanshu-singh-aswal</span>
+                    <span className="text-sm text-[#253D2C]">abhishek-dobhal</span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <MapPin className="h-5 w-5 text-[#68BA7F]" />
@@ -133,7 +133,7 @@ function App() {
               <div className="bg-white p-6 rounded-lg shadow-sm border border-[#68BA7F]">
                 <h3 className="text-lg font-semibold text-[#253D2C]">About Me</h3>
                 <p className="mt-4 text-[#2E6F40]">
-                  Machine Learning Engineer with 2+ years of hands-on experience in developing AI solutions, published researcher in computer vision, and winner of multiple hackathons. Specialized in deep learning applications with expertise in TensorFlow, computer vision, and full-stack development.
+                  A passionate student and budding developer from KV Uppercamp with a keen interest in web development and technology.
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -151,20 +151,17 @@ function App() {
               <div className="bg-white p-6 rounded-lg shadow-sm border border-[#68BA7F]">
                 <h3 className="text-lg font-semibold text-[#253D2C]">Education</h3>
                 <div className="mt-4">
-                  <h4 className="font-medium text-[#253D2C]">Graphic Era Hill University (2022–2026)</h4>
-                  <p className="text-sm text-[#2E6F40]">B.E. Computer Science — CGPA: 8.11/10</p>
-                  <p className="mt-2 text-sm text-[#2E6F40]">
-                    Relevant Coursework: Machine Learning, Deep Learning, Computer Vision, Data Structures & Algorithms, DBMS, Cloud Computing
-                  </p>
+                  <h4 className="font-medium text-[#253D2C]">KV Uppercamp (2018–2022)</h4>
+                  <p className="text-sm text-[#2E6F40]">High School — CGPA: 9.2/10</p>
                 </div>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-sm border border-[#68BA7F]">
                 <h3 className="text-lg font-semibold text-[#253D2C]">Publications</h3>
                 <div className="mt-4">
-                  <h4 className="font-medium text-[#253D2C]">"Neuroscience of Virtual Reality" (IEEE, 2022)</h4>
+                  <h4 className="font-medium text-[#253D2C]">"Exploring Modern Web Technologies" (Blog, 2023)</h4>
                   <p className="mt-2 text-sm text-[#2E6F40]">
-                    Developed a novel methodology for analyzing neural correlates in VR environments using EEG and machine learning techniques.
+                    Shared insights and practical tips on modern web development trends and best practices.
                   </p>
                 </div>
               </div>
@@ -250,9 +247,9 @@ function App() {
             <div className="bg-white p-6 rounded-lg shadow-sm border border-[#68BA7F]">
               <h3 className="text-lg font-semibold text-[#253D2C]">Achievements</h3>
               <ul className="mt-4 space-y-3 list-disc list-inside text-[#2E6F40]">
-                <li>1st Place - CodeFest 2022 AI Challenge (Among 150+ teams)</li>
-                <li>Top 5% - Google Kick Start Programming Competition 2023</li>
-                <li>Grant Recipient - NVIDIA Academic Hardware Grant (2023)</li>
+                <li>Winner - School Coding Challenge 2021</li>
+                <li>Top 10% - National Math Olympiad</li>
+                <li>Excellence Award - KV Uppercamp Annual Tech Fest</li>
               </ul>
             </div>
           </div>
