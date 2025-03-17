@@ -29,38 +29,32 @@ function App() {
     {
       week: "Week 1",
       summary: "Self introduction",
-      link: "https://youtube.com/shorts/d-eHyNbluk?feature=share",
+      link: "https://drive.google.com/file/d/1xyFEouyM8_zfKovxt069c2p14AGH2xQG/view?usp=sharing",
       siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b95deef472892a?pvs=4"
     },
     {
       week: "Week 1.a",
       summary: "Adding little elements to your introduction",
-      link: "https://youtube.com/shorts/yxUbfep1c?feature=share",
+      link: "https://drive.google.com/file/d/16XX0PIecq7DpYWt9jKJ5PPoF1Hxv218R/view?usp=sharing",
       siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b9eeddf472892a?pvs=4"
     },
     {
       week: "Week 2",
       summary: "Great story on self love",
-      link: "https://youtube.com/shorts/tocLpz9ss?feature=share",
+      link: "https://drive.google.com/file/d/1Ro4v6rQ0SdRenrNyPR7Jncu6mL6Dfi8Q/view?usp=sharing",
       siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660abad80d2b9eeddf472892a?pvs=4"
     },
     {
       week: "Week 3",
       summary: "How to write resume",
-      link: "https://youtube.com/shorts/KTGCLDEXU?feature=share",
+      link: "https://drive.google.com/file/d/1TAqM31o3xntsrDM5RH82tGAWDxL7pncP/view?usp=sharing",
       siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b5660abad80d2b95deeddf472892a?pvs=4"
     },
     {
       week: "Week 4",
       summary: "Women empowerment (1 vs 64)",
-      link: "https://youtube.com/shorts/F1uVS8zFg?feature=share",
+      link: "https://drive.google.com/file/d/1xnRDv7f0-jYhr8XhwhL42_YRLjUu8AiC/view?usp=sharing",
       siteLink: "https://www.notion.so/SELF-INTRODUCTION-1b56d660ad80d2b95deeddf472892a?pvs=4"
-    },
-    {
-      week: "Assignment",
-      summary: "Movie Review- Schindler's List",
-      link: "https://youtu.be/B9ZWUcIA?si=fipVmf516njwLyu6",
-      siteLink: "https://www.notion.so/movie-review-1b56d660abad80e5bfc15cf85717e?pvs=4"
     }
   ];
 
